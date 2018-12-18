@@ -7,6 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "appcenter": "1.11.0",
+    "appcenter-analytics": "1.11.0",
+    "appcenter-crashes": "1.11.0",
     "react": "16.6.3",
     "react-native": "0.57.8"
   },
