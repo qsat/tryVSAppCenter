@@ -23,7 +23,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = { restartAllowed: true };
-    Crashes.generateTestCrash();
+
+    Crashes.isEnabled().then((a) => console.log(a))
+
+    Crashes.setListener({
+      onBeforeSending: function (report) {
+        console.log('before send')
+        // called after Crashes.process and before sending the crash.
+      },
+      onSendingSucceeded: function (report) {
+        console.log('send success')
+        // called when crash report sent successfully.
+      },
+      onSendingFailed: function (report) {
+        console.log('send fail')
+        // called when crash report could not be sent.
+      }
+
+      // Other callbacks must also be defined at the same time if used.
+      // Default values are used if a method with return parameter is not defined.
+    });
   }
 
   codePushStatusDidChange(syncStatus) {
@@ -120,6 +139,12 @@ class App extends Component {
         </TouchableOpacity>
         <TouchableOpacity onPress={this.getUpdateMetadata.bind(this)}>
           <Text style={styles.syncButton}>Press for Update Metadata</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => Crashes.generateTestCrash()}>
+          <Text style={styles.syncButton}>Make Crash</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => { throw new Error('This is a test javascript crash!') }}>
+          <Text style={styles.syncButton}>Make JS Crash</Text>
         </TouchableOpacity>
         <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
       </View>

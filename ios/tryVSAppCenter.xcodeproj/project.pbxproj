@@ -42,7 +42,6 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8F86D5247FFCB6AD37901D64 /* libPods-tryVSAppCenterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AD764E3938C560AC205854 /* libPods-tryVSAppCenterTests.a */; };
 		9BB4B5AFD2AE8708AA78DA56 /* libPods-tryVSAppCenter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637FC235D37E548CB3E1781F /* libPods-tryVSAppCenter-tvOS.a */; };
-		A214A06FB67A46788D51FF77 /* libAppCenterReactNativeAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625FBF6A7AF48358A10E546 /* libAppCenterReactNativeAnalytics.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		AE6AD07C937D48CFABE136B4 /* libAppCenterReactNativeCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 375098983D944ABFB6CF281B /* libAppCenterReactNativeCrashes.a */; };
 		CCCA293DA2CA46E2913D6A9A /* libAppCenterReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E11D21A992134CB6AF506AD5 /* libAppCenterReactNative.a */; };
@@ -440,7 +439,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				CCCA293DA2CA46E2913D6A9A /* libAppCenterReactNative.a in Frameworks */,
-				A214A06FB67A46788D51FF77 /* libAppCenterReactNativeAnalytics.a in Frameworks */,
 				AE6AD07C937D48CFABE136B4 /* libAppCenterReactNativeCrashes.a in Frameworks */,
 				2B9DEB2EB1BD66E3678B53BD /* libPods-tryVSAppCenter.a in Frameworks */,
 			);
