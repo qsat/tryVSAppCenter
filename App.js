@@ -17,11 +17,13 @@ import {
 } from 'react-native';
 
 import CodePush from "react-native-code-push";
+import Crashes from "appcenter-crashes";
 
 class App extends Component {
   constructor() {
     super();
     this.state = { restartAllowed: true };
+    Crashes.generateTestCrash();
   }
 
   codePushStatusDidChange(syncStatus) {
